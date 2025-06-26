@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import India from "./pages/India";
 import Europe from "./pages/Europe";
+import BookNow from "./pages/BookNow";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -18,9 +20,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/india" element={<India />} />
           <Route path="/europe" element={<Europe/>}/>
+          <Route path="/booknow" element={<BookNow/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <Toaster/>
       </BrowserRouter>
     </>
   );

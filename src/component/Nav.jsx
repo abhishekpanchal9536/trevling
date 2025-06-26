@@ -69,9 +69,9 @@ const Nav = () => {
           </li>
 
           <li>
-            <a href="#" className="hover:text-yellow-300">
+            <Link to={"/booknow"} className="hover:text-yellow-300">
               Book Now
-            </a>
+            </Link>
           </li>
         </ul>
 
